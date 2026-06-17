@@ -12,21 +12,21 @@ public:
 
         while(top <= bottom && left <= right)
         {
-            // Top Row
+            
             for(int col = left; col <= right; col++)
             {
                 matrix[top][col] = num++;
             }
             top++;
 
-            // Right Column
+            
             for(int row = top; row <= bottom; row++)
             {
                 matrix[row][right] = num++;
             }
             right--;
 
-            // Bottom Row
+            
             if(top <= bottom)
             {
                 for(int col = right; col >= left; col--)
@@ -36,7 +36,7 @@ public:
                 bottom--;
             }
 
-            // Left Column
+            
             if(left <= right)
             {
                 for(int row = bottom; row >= top; row--)
